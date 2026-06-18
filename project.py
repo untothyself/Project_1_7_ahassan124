@@ -30,3 +30,8 @@ if choice == "1":
     print("\nGame Collection:")
     for game, rating in games.items():
         print(f"{game} - Rating: {rating}/10")
+elif choice == "2":
+    game = input("Enter game title: ")
+    rating = int(input("Enter rating (1-10): "))
+    games[game] = rating
+    print("Game added")
