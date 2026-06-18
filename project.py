@@ -14,3 +14,14 @@ games = {
     "Pathfinder Wotr": 10,
     "Hades": 8
 }
+#Number is game rating out of 10
+
+while True:
+    print("\n=== Video Game Collection Manager ===")
+    print("1. View Games")
+    print("2. Add Game")
+    print("3. Remove Game")
+    print("4. Search Game")
+    print("5. Exit")
+
+    choice = input("Choose an option: ")
