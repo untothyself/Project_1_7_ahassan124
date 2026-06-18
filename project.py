@@ -14,7 +14,7 @@ games = {
     "Pathfinder Wotr": 10,
     "Hades": 8
 }
-#Number is game rating out of 10
+# Number is game rating out of 10
 
 while True:
     print("\n=== Video Game Collection Manager ===")
@@ -26,30 +26,30 @@ while True:
 
     choice = input("Choose an option: ")
 
-if choice == "1":
-    print("\nGame Collection:")
-    for game, rating in games.items():
-        print(f"{game} - Rating: {rating}/10")
-elif choice == "2":
-    game = input("Enter game title: ")
-    rating = int(input("Enter rating (1-10): "))
-    games[game] = rating
-    print("Game added")
-elif choice == "3":
-    game = input("Enter game to remove: ")
-    if game in games:
-        del games[game]
-        print("Game removed")
+    if choice == "1":
+        print("\nGame Collection:")
+        for game, rating in games.items():
+            print(f"{game} - Rating: {rating}/10")
+    elif choice == "2":
+        game = input("Enter game title: ")
+        rating = int(input("Enter rating (1-10): "))
+        games[game] = rating
+        print("Game added")
+    elif choice == "3":
+        game = input("Enter game to remove: ")
+        if game in games:
+            del games[game]
+            print("Game removed")
+        else:
+            print("Game not found")
+    elif choice == "4":
+        game = input("Enter game name: ")
+        if game in games:
+            print(f"{game} - Rating: {games[game]}/10")
+        else:
+            print("Game not found")
+    elif choice == "5":
+        print(f"Goodbye, {player_name}!")
+        break
     else:
-        print("Game not found")
-elif choice == "4":
-    game = input("Enter game name: ")
-    if game in games:
-        print(f"{game} - Rating: {games[game]}/10")
-    else:
-        print("Game not found")
-elif choice == "5":
-    print(f"Goodbye, {player_name}!")
-    break
-else:
-    print("Invalid option")
+        print("Invalid option")
