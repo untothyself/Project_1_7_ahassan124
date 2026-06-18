@@ -35,3 +35,10 @@ elif choice == "2":
     rating = int(input("Enter rating (1-10): "))
     games[game] = rating
     print("Game added")
+elif choice == "3":
+    game = input("Enter game to remove: ")
+    if game in games:
+        del games[game]
+        print("Game removed")
+    else:
+        print("Game not found")
