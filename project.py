@@ -48,3 +48,8 @@ elif choice == "4":
         print(f"{game} - Rating: {games[game]}/10")
     else:
         print("Game not found")
+elif choice == "5":
+    print(f"Goodbye, {player_name}!")
+    break
+else:
+    print("Invalid option")
