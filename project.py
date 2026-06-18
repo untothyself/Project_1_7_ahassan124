@@ -7,8 +7,10 @@ Date: June 2026
 """
 
 player_name = input("Enter your name: ")
-print("Welcome,", player_name)
+print(f"Welcome, {player_name}")
 
 games = {
-    
+    "Scarlet Hollow": 9,
+    "Pathfinder Wotr": 10,
+    "Hades": 8
 }
