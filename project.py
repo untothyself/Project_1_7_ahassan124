@@ -42,3 +42,9 @@ elif choice == "3":
         print("Game removed")
     else:
         print("Game not found")
+elif choice == "4":
+    game = input("Enter game name: ")
+    if game in games:
+        print(f"{game} - Rating: {games[game]}/10")
+    else:
+        print("Game not found")
