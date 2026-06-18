@@ -53,3 +53,6 @@ while True:
         break
     else:
         print("Invalid option")
+    favorite_game = ("Scarlet Hollow", 9)
+    print(f"you own {len(games)} games.")
+    
