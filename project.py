@@ -25,3 +25,8 @@ while True:
     print("5. Exit")
 
     choice = input("Choose an option: ")
+
+if choice == "1":
+    print("\nGame Collection:")
+    for game, rating in games.items():
+        print(f"{game} - Rating: {rating}/10")
